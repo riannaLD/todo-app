@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+<p>
+    Here are the tasks you need to do!
+</p>
+{% for task in all_tasks %}
+    <p>
+        Task no. #{{ task.id }}<br>
+        {{ task.description }}<br>
+    </p>
+{% endfor %}
+{% endblock body %}
